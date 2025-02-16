@@ -36,7 +36,7 @@ b. run your deployment (note: Be sure you have access to the eks cluster before 
 
     kubectl apply -f application1.yml
 
-The application gets deployed into the cluster which is running Graviton instance,
+The application gets deployed into the cluster which is running Graviton instances,
 any new application to be deployed will follow same deployment step.
 
 

@@ -8,16 +8,16 @@ STEP 1: Infrastructure provisioning
 To run the Terraform code: 
 
 a. Go into terraform root module folder
-    cd infra/environment/dev
+cd infra/environment/dev
 
 b. Iniialize terraform
-    run command "terraform init"
+run command "terraform init"
 
 c. Plan terraform script
-    run command "terraform plan"
+run command "terraform plan"
 
 d. Deploy terraform script
-    run command "terraform apply --auto-approve"
+run command "terraform apply --auto-approve"
 
 Once it is deployed successfully, the cluster is ready to run your applications and scale it efficiently 
 

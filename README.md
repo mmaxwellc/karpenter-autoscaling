@@ -6,6 +6,7 @@ This repository contains the full infrastructure code (in terraform) That automa
 STEP 1: Infrastructure provisioning
 
 To run the Terraform code: 
+
 a. Go into terraform root module folder
     cd infra/environment/dev
 

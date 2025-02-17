@@ -9,7 +9,7 @@ terraform {
 
 resource "kubectl_manifest" "karpenter_node_pool" {
   yaml_body = <<-YAML
-    apiVersion: karpenter.sh/v1beta1
+    apiVersion: karpenter.sh/v1
     kind: NodePool
     metadata:
       name: default
@@ -18,6 +18,8 @@ resource "kubectl_manifest" "karpenter_node_pool" {
         spec:
           nodeClassRef:
             name: default
+            group: karpenter.k8s.aws
+            kind: EC2NodeClass
           requirements:
             - key: "karpenter.k8s.aws/instance-category"
               operator: In
